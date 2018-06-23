@@ -9,7 +9,7 @@
 final class SearchParamsBuilder {
     
     /// 通信に使用するのAPIKey
-    static let apiKey = "自身のkey"
+    static let apiKey = "ddbb6c5087ba8f1dd03ea8cba17ccff5"
     
     /// 1ページあたりの表示件数
     static let perPage = 50

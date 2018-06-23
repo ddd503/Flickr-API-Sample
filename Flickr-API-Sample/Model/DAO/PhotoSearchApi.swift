@@ -88,6 +88,8 @@ final class PhotoSearchApi {
             case .success(let jsonData):
                 do {
                     let decoder = JSONDecoder()
+                    // スネークケースタイプKeyでもcodableしてくれる
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let photoSearchResponse = try decoder.decode(PhotoSearchResponse.self, from: jsonData)
                     
                     guard
